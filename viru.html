@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>scammed or hacked!</title>
+  <title>Viru Page - ViroDev</title>
   <link rel="icon" href="/images/death.ico" type="image/x-icon">
   <style>
     body {
@@ -35,6 +35,28 @@
       color: #f39c12;
     }
 
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #f39c12;
+        }
+
+    .download-btn {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 50px;
+      background-color: #f39c12;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #e67e22;
+      transform: scale(1.05);
+    }
+
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -49,15 +71,12 @@
 </head>
 <body>
   <div class="message-container">
-    <h1>YOU HAVE VIRUS!!</h1>
+    <h1>Getting started!</h1>
+    <p>Download the file to get started!</p>
+    <!-- Download button -->
+    <a href="your-file.zip" download>
+      <button class="download-btn">Download File</button>
+    </a>
   </div>
-
-  <script>
-    // Automatically download a file when the page loads
-    const downloadLink = document.createElement('a');
-    downloadLink.href = '/viruses/test.txt'; // Change this to your file's URL
-    downloadLink.download = 'viro-test.txt'; // File name for the download
-    downloadLink.click();
-  </script>
 </body>
 </html>
