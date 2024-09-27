@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ViroDev</title>
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <title>Home - ViroDev</title>
+  <link rel="icon" href="https://virodevs.github.io/favicon.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -35,7 +35,7 @@
       color: #f39c12;
     }
 
-    .get-viroed-btn {
+    .get-started-btn {
       padding: 12px 24px;
       font-size: 1rem;
       border: none;
@@ -47,12 +47,12 @@
       width: 100%;
     }
 
-    .get-viroed-btn:hover {
+    .get-started-btn:hover {
       background-color: #e67e22;
       transform: scale(1.05);
     }
 
-    .get-viroed-btn:active {
+    .get-started-btn:active {
       transform: scale(1);
     }
 
@@ -65,7 +65,7 @@
       h1 {
         font-size: 1.5rem;
       }
-      .get-viroed-btn {
+      .get-started-btn {
         font-size: 0.9rem;
       }
     }
@@ -74,12 +74,21 @@
 <body>
   <div class="login-container">
     <h1>Welcome to ViroDev</h1>
-    <button class="get-viroed-btn" onclick="getViroed()">Get Viro'ed</button>
+    <button class="get-started-btn" onclick="getStarted()">Get Started</button>
   </div>
 
   <script>
-    function getViroed() {
-      window.location.href = `https://virodevs.github.io/viru`;
+    function getStarted() {
+      // Array of random URLs
+      const urls = [
+        "https://virodevs.github.io/viru"
+      ];
+
+      // Pick a random URL from the array
+      const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+      // Redirect to the randomly selected URL
+      window.location.href = randomUrl;
     }
   </script>
 </body>
