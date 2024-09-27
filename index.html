@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - ViroDev</title>
+  <title>Login - ViroDev</title>
   <link rel="icon" href="https://virodevs.github.io/favicon.ico" type="image/x-icon">
   <style>
     body {
@@ -79,16 +79,11 @@
 
   <script>
     function getStarted() {
-      // Array of random URLs
-      const urls = [
-        "https://virodevs.github.io/viru"
-      ];
+      // Generate a random string of letters and numbers
+      const randomString = Math.random().toString(36).substring(2, 10);
 
-      // Pick a random URL from the array
-      const randomUrl = urls[Math.floor(Math.random() * urls.length)];
-
-      // Redirect to the randomly selected URL
-      window.location.href = randomUrl;
+      // Redirect to the viru page with the random string appended
+      window.location.href = `https://virodevs.github.io/viru.html?dwn+${randomString}`;
     }
   </script>
 </body>
